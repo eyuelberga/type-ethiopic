@@ -1,0 +1,15 @@
+{
+    "extends": "../../tsconfig.build.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "composite": true,
+        "downlevelIteration": true
+    },
+    "include": ["src/**/*"],
+    "references": [
+        {
+            "path": "../core"
+        }
+    ]
+}
