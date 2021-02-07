@@ -9,9 +9,9 @@
     },
     "scripts": {
         "prepare": "node ./configure-references.js",
-        "build": "lerna run build --stream",
-        "lint": "lerna run lint --stream --parallel",
-        "test": "lerna run test  --stream",
+        "build": "lerna run build --stream --no-private",
+        "lint": "lerna run lint --stream --parallel --no-private",
+        "test": "lerna run test  --stream --no-private",
         "commit": "git-cz",
         "release": "changeset publish",
         "version": "changeset version"

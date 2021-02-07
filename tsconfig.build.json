@@ -2,7 +2,8 @@
     "compilerOptions": {
         "target": "es5",
         "outDir": "./dist",
-        "module": "commonjs",
+        "module": "es6",
+        "moduleResolution": "node",
         "jsx": "react",
         "strict": true,
         "declaration": true,
