@@ -4,13 +4,12 @@
   </a>
 </p>
 
-<h1 align="center">Typing ⌨️ Ethiopic scripts made easy</h1>
+<h1 align="center">⌨️ Typing Ethiopic scripts made easy</h1>
 
 <br>
 
 <p align="center">
 <a href="https://github.com/eyuelberga/type-ethiopic/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/eyuelberga/type-ethiopic"></a>
-<img alt="npm" src="https://img.shields.io/npm/dw/@type-ethiopic/web">
 <img alt="build" src="https://travis-ci.org/eyuelberga/type-ethiopic.svg?branch=master">
 <a href="https://openbase.com/js/@type-ethiopic/web?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge"><img alt="Rate on Openbase" src="https://badges.openbase.com/js/rating/@type-ethiopic/web.svg"></a>
 </p>
