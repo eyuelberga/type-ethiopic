@@ -18,14 +18,14 @@ describe('TypeEthiopicWeb.ts', () => {
         textarea = document.querySelector('textarea') as HTMLTextAreaElement;
     });
     it('should work with HTMLInputElement & HTMLTextAreaElement', () => {
-        const newInstance1 = new TypeEthiopicWeb(input, KeyboardLayouts);
-        const newInstance2 = new TypeEthiopicWeb(textarea, KeyboardLayouts);
+        const newInstance1 = new TypeEthiopicWeb(input);
+        const newInstance2 = new TypeEthiopicWeb(textarea);
         expect(newInstance1).toBeDefined();
         expect(newInstance2).toBeDefined();
     });
     it('should be able to turn on after initialization', () => {
-        const inputInstance = new TypeEthiopicWeb(input, KeyboardLayouts, false);
-        const textareaInstance = new TypeEthiopicWeb(textarea, KeyboardLayouts, false);
+        const inputInstance = new TypeEthiopicWeb(input, false, KeyboardLayouts);
+        const textareaInstance = new TypeEthiopicWeb(textarea, false, KeyboardLayouts);
         const text = 'selam selam';
         const expectedText = 'ሰላም ሰላም';
         // input
@@ -40,8 +40,8 @@ describe('TypeEthiopicWeb.ts', () => {
         expect(input.value).toEqual(expectedText);
     });
     it('should be able to turn off after initialization', () => {
-        const inputInstance = new TypeEthiopicWeb(input, KeyboardLayouts);
-        const textareaInstance = new TypeEthiopicWeb(textarea, KeyboardLayouts);
+        const inputInstance = new TypeEthiopicWeb(input, true, KeyboardLayouts);
+        const textareaInstance = new TypeEthiopicWeb(textarea, true, KeyboardLayouts);
         const text = 'selam';
         const expectedText = 'selam';
         // input
@@ -58,8 +58,8 @@ describe('TypeEthiopicWeb.ts', () => {
         expect(input.value).toEqual(expectedText);
     });
     it('should not write character if (CTRL) key had been triggered ', () => {
-        new TypeEthiopicWeb(input, KeyboardLayouts);
-        new TypeEthiopicWeb(textarea, KeyboardLayouts);
+        new TypeEthiopicWeb(input, true, KeyboardLayouts);
+        new TypeEthiopicWeb(textarea, true, KeyboardLayouts);
 
         const text = ['s', 'e', 'l', 'Control', 'a', 'm'];
         const expectedText = 'ሰልም';
@@ -72,8 +72,8 @@ describe('TypeEthiopicWeb.ts', () => {
     });
 
     it('should not write character if (SHIFT) key had been triggered ', () => {
-        new TypeEthiopicWeb(input, KeyboardLayouts);
-        new TypeEthiopicWeb(textarea, KeyboardLayouts);
+        new TypeEthiopicWeb(input, true, KeyboardLayouts);
+        new TypeEthiopicWeb(textarea, true, KeyboardLayouts);
 
         const text = ['s', 'e', 'l', 'Shift', 'a', 'm'];
         const expectedText = 'ሰልም';
@@ -86,8 +86,8 @@ describe('TypeEthiopicWeb.ts', () => {
     });
 
     it('should not write character if (ALT) key had been triggered ', () => {
-        new TypeEthiopicWeb(input, KeyboardLayouts);
-        new TypeEthiopicWeb(textarea, KeyboardLayouts);
+        new TypeEthiopicWeb(input, true, KeyboardLayouts);
+        new TypeEthiopicWeb(textarea, true, KeyboardLayouts);
 
         const text = ['s', 'e', 'l', 'Alt', 'a', 'm'];
         const expectedText = 'ሰልም';
@@ -100,8 +100,8 @@ describe('TypeEthiopicWeb.ts', () => {
     });
 
     it('should not write character if (META) key had been triggered ', () => {
-        new TypeEthiopicWeb(input, KeyboardLayouts);
-        new TypeEthiopicWeb(textarea, KeyboardLayouts);
+        new TypeEthiopicWeb(input, true, KeyboardLayouts);
+        new TypeEthiopicWeb(textarea, true, KeyboardLayouts);
 
         const text = ['s', 'e', 'l', 'Meta', 'a', 'm'];
         const expectedText = 'ሰልም';
@@ -114,8 +114,8 @@ describe('TypeEthiopicWeb.ts', () => {
     });
 
     it('should reset scope if input looses focus', () => {
-        new TypeEthiopicWeb(input, KeyboardLayouts);
-        new TypeEthiopicWeb(textarea, KeyboardLayouts);
+        new TypeEthiopicWeb(input, true, KeyboardLayouts);
+        new TypeEthiopicWeb(textarea, true, KeyboardLayouts);
         const texts = [
             ['s', 'e', 'l'],
             ['a', 'm'],
