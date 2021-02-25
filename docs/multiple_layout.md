@@ -16,7 +16,7 @@ import layout3 from './layout3';
 
 // add to HTMLInputElement with multiple layout definitions
 // the parameter accepts a map of layout name and its definition
-new TypeEthiopicWeb(document.querySelector('input'), {
+new TypeEthiopicWeb(document.querySelector('input'),true, {
     default: layout1,
     typewriter: layout2,
     mnemonic: layout3,

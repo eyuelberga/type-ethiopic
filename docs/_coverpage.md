@@ -1,6 +1,6 @@
 ![logo](_media/logo.png)
 
-# Type Ethiopic <small>0.1.1</small>
+# Type Ethiopic <small>0.1.2</small>
 
 > ⌨️ Typing Ethiopic scripts made easy
 
