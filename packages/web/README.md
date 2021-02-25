@@ -21,11 +21,9 @@ import { TypeEthiopicWeb } from '@type-ethiopic/web';
 import layout from './layout';
 
 // add to HTMLInputElement
-new TypeEthiopicWeb(document.querySelector('input'), {
-    layout,
-});
+new TypeEthiopicWeb(document.querySelector('input'));
 // add to HTMLTextAreaElement
-new TypeEthiopicWeb(document.querySelector('textarea'), { layout });
+new TypeEthiopicWeb(document.querySelector('textarea'));
 ```
 
 ## License
