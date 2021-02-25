@@ -12,7 +12,7 @@
 <a href="https://github.com/eyuelberga/type-ethiopic/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/eyuelberga/type-ethiopic"></a>
 <img alt="build" src="https://travis-ci.org/eyuelberga/type-ethiopic.svg?branch=master">
 <a href="https://openbase.com/js/@type-ethiopic/web?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge"><img alt="Rate on Openbase" src="https://badges.openbase.com/js/rating/@type-ethiopic/web.svg"></a>
-<a href="https://github.com/eyuelberga/type-ethiopic/blob/master/CONTRIBUTING.md"><img alt="CONTRIBUTING" src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg"></a>
+<a href="https://github.com/eyuelberga/type-ethiopic/blob/master/CODE_OF_CONDUCT.md"><img alt="CONTRIBUTING" src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg"></a>
 
 </p>
 <br />
