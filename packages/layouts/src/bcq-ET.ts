@@ -2,6 +2,7 @@ export default {
     meta: { name: 'Bench', regions: ['bcq-ET'] },
     layout: {
         h: {
+            value: 'ህ',
             next: {
                 e: { value: 'ሀ', next: null },
                 E: { value: 'ሀ', next: null },
@@ -16,6 +17,7 @@ export default {
             },
         },
         l: {
+            value: 'ል',
             next: {
                 u: { value: 'ሉ', next: null },
                 U: { value: 'ሉ', next: null },
@@ -28,6 +30,7 @@ export default {
             },
         },
         L: {
+            value: 'ል',
             next: {
                 u: { value: 'ሉ', next: null },
                 U: { value: 'ሉ', next: null },
@@ -40,6 +43,7 @@ export default {
             },
         },
         H: {
+            value: 'ሕ',
             next: {
                 u: { value: 'ሑ', next: null },
                 U: { value: 'ሑ', next: null },
@@ -52,6 +56,7 @@ export default {
             },
         },
         m: {
+            value: 'ም',
             next: {
                 u: { value: 'ሙ', next: null },
                 U: { value: 'ሙ', next: null },
@@ -64,6 +69,7 @@ export default {
             },
         },
         M: {
+            value: 'ም',
             next: {
                 u: { value: 'ሙ', next: null },
                 U: { value: 'ሙ', next: null },
@@ -76,6 +82,7 @@ export default {
             },
         },
         s: {
+            value: 'ስ',
             next: {
                 u: { value: 'ሱ', next: null },
                 U: { value: 'ሱ', next: null },
@@ -88,6 +95,7 @@ export default {
             },
         },
         r: {
+            value: 'ር',
             next: {
                 u: { value: 'ሩ', next: null },
                 U: { value: 'ሩ', next: null },
@@ -100,6 +108,7 @@ export default {
             },
         },
         R: {
+            value: 'ር',
             next: {
                 u: { value: 'ሩ', next: null },
                 U: { value: 'ሩ', next: null },
@@ -112,6 +121,7 @@ export default {
             },
         },
         x: {
+            value: 'ሽ',
             next: {
                 u: { value: 'ሹ', next: null },
                 U: { value: 'ሹ', next: null },
@@ -122,6 +132,7 @@ export default {
                 o: { value: 'ሾ', next: null },
                 O: { value: 'ሾ', next: null },
                 x: {
+                    value: 'ⶥ',
                     next: {
                         u: { value: 'ⶡ', next: null },
                         U: { value: 'ⶡ', next: null },
@@ -134,6 +145,7 @@ export default {
                     },
                 },
                 X: {
+                    value: 'ⶥ',
                     next: {
                         u: { value: 'ⶡ', next: null },
                         U: { value: 'ⶡ', next: null },
@@ -148,6 +160,7 @@ export default {
             },
         },
         X: {
+            value: 'ሽ',
             next: {
                 u: { value: 'ሹ', next: null },
                 U: { value: 'ሹ', next: null },
@@ -158,6 +171,7 @@ export default {
                 o: { value: 'ሾ', next: null },
                 O: { value: 'ሾ', next: null },
                 x: {
+                    value: 'ⶥ',
                     next: {
                         u: { value: 'ⶡ', next: null },
                         U: { value: 'ⶡ', next: null },
@@ -170,6 +184,7 @@ export default {
                     },
                 },
                 X: {
+                    value: 'ⶥ',
                     next: {
                         u: { value: 'ⶡ', next: null },
                         U: { value: 'ⶡ', next: null },
@@ -184,6 +199,7 @@ export default {
             },
         },
         q: {
+            value: 'ቅ',
             next: {
                 u: { value: 'ቁ', next: null },
                 U: { value: 'ቁ', next: null },
@@ -196,6 +212,7 @@ export default {
             },
         },
         Q: {
+            value: 'ቅ',
             next: {
                 u: { value: 'ቁ', next: null },
                 U: { value: 'ቁ', next: null },
@@ -208,6 +225,7 @@ export default {
             },
         },
         b: {
+            value: 'ብ',
             next: {
                 u: { value: 'ቡ', next: null },
                 U: { value: 'ቡ', next: null },
@@ -220,6 +238,7 @@ export default {
             },
         },
         B: {
+            value: 'ብ',
             next: {
                 u: { value: 'ቡ', next: null },
                 U: { value: 'ቡ', next: null },
@@ -232,6 +251,7 @@ export default {
             },
         },
         v: {
+            value: 'ብ',
             next: {
                 u: { value: 'ቡ', next: null },
                 U: { value: 'ቡ', next: null },
@@ -244,6 +264,7 @@ export default {
             },
         },
         V: {
+            value: 'ብ',
             next: {
                 u: { value: 'ቡ', next: null },
                 U: { value: 'ቡ', next: null },
@@ -256,6 +277,7 @@ export default {
             },
         },
         t: {
+            value: 'ት',
             next: {
                 u: { value: 'ቱ', next: null },
                 U: { value: 'ቱ', next: null },
@@ -268,6 +290,7 @@ export default {
             },
         },
         c: {
+            value: 'ች',
             next: {
                 u: { value: 'ቹ', next: null },
                 U: { value: 'ቹ', next: null },
@@ -278,6 +301,7 @@ export default {
                 o: { value: 'ቾ', next: null },
                 O: { value: 'ቾ', next: null },
                 c: {
+                    value: 'ⶭ',
                     next: {
                         u: { value: 'ⶩ', next: null },
                         U: { value: 'ⶩ', next: null },
@@ -292,6 +316,7 @@ export default {
             },
         },
         n: {
+            value: 'ን',
             next: {
                 u: { value: 'ኑ', next: null },
                 U: { value: 'ኑ', next: null },
@@ -304,6 +329,7 @@ export default {
             },
         },
         N: {
+            value: 'ን',
             next: {
                 u: { value: 'ኑ', next: null },
                 U: { value: 'ኑ', next: null },
@@ -316,6 +342,7 @@ export default {
             },
         },
         a: {
+            value: 'እ',
             next: {
                 e: { value: 'አ', next: null },
                 E: { value: 'አ', next: null },
@@ -330,6 +357,7 @@ export default {
             },
         },
         k: {
+            value: 'ክ',
             next: {
                 u: { value: 'ኩ', next: null },
                 U: { value: 'ኩ', next: null },
@@ -342,6 +370,7 @@ export default {
             },
         },
         K: {
+            value: 'ክ',
             next: {
                 u: { value: 'ኩ', next: null },
                 U: { value: 'ኩ', next: null },
@@ -354,6 +383,7 @@ export default {
             },
         },
         w: {
+            value: 'ው',
             next: {
                 u: { value: 'ዉ', next: null },
                 U: { value: 'ዉ', next: null },
@@ -366,6 +396,7 @@ export default {
             },
         },
         W: {
+            value: 'ው',
             next: {
                 u: { value: 'ዉ', next: null },
                 U: { value: 'ዉ', next: null },
@@ -378,6 +409,7 @@ export default {
             },
         },
         z: {
+            value: 'ዝ',
             next: {
                 u: { value: 'ዙ', next: null },
                 U: { value: 'ዙ', next: null },
@@ -390,6 +422,7 @@ export default {
             },
         },
         Z: {
+            value: 'ዥ',
             next: {
                 u: { value: 'ዡ', next: null },
                 U: { value: 'ዡ', next: null },
@@ -400,6 +433,7 @@ export default {
                 o: { value: 'ዦ', next: null },
                 O: { value: 'ዦ', next: null },
                 Z: {
+                    value: 'ⶵ',
                     next: {
                         u: { value: 'ⶱ', next: null },
                         U: { value: 'ⶱ', next: null },
@@ -414,6 +448,7 @@ export default {
             },
         },
         y: {
+            value: 'ይ',
             next: {
                 u: { value: 'ዩ', next: null },
                 U: { value: 'ዩ', next: null },
@@ -426,6 +461,7 @@ export default {
             },
         },
         Y: {
+            value: 'ይ',
             next: {
                 u: { value: 'ዩ', next: null },
                 U: { value: 'ዩ', next: null },
@@ -438,6 +474,7 @@ export default {
             },
         },
         d: {
+            value: 'ድ',
             next: {
                 u: { value: 'ዱ', next: null },
                 U: { value: 'ዱ', next: null },
@@ -450,6 +487,7 @@ export default {
             },
         },
         D: {
+            value: 'ድ',
             next: {
                 u: { value: 'ዱ', next: null },
                 U: { value: 'ዱ', next: null },
@@ -462,6 +500,7 @@ export default {
             },
         },
         j: {
+            value: 'ጅ',
             next: {
                 u: { value: 'ጁ', next: null },
                 U: { value: 'ጁ', next: null },
@@ -474,6 +513,7 @@ export default {
             },
         },
         J: {
+            value: 'ጅ',
             next: {
                 u: { value: 'ጁ', next: null },
                 U: { value: 'ጁ', next: null },
@@ -486,6 +526,7 @@ export default {
             },
         },
         g: {
+            value: 'ግ',
             next: {
                 u: { value: 'ጉ', next: null },
                 U: { value: 'ጉ', next: null },
@@ -498,6 +539,7 @@ export default {
             },
         },
         G: {
+            value: 'ግ',
             next: {
                 u: { value: 'ጉ', next: null },
                 U: { value: 'ጉ', next: null },
@@ -510,6 +552,7 @@ export default {
             },
         },
         T: {
+            value: 'ጥ',
             next: {
                 u: { value: 'ጡ', next: null },
                 U: { value: 'ጡ', next: null },
@@ -522,6 +565,7 @@ export default {
             },
         },
         C: {
+            value: 'ጭ',
             next: {
                 u: { value: 'ጩ', next: null },
                 U: { value: 'ጩ', next: null },
@@ -532,6 +576,7 @@ export default {
                 o: { value: 'ጮ', next: null },
                 O: { value: 'ጮ', next: null },
                 C: {
+                    value: 'ⶽ',
                     next: {
                         u: { value: 'ⶹ', next: null },
                         U: { value: 'ⶹ', next: null },
@@ -546,6 +591,7 @@ export default {
             },
         },
         P: {
+            value: 'ጵ',
             next: {
                 u: { value: 'ጱ', next: null },
                 U: { value: 'ጱ', next: null },
@@ -558,6 +604,7 @@ export default {
             },
         },
         S: {
+            value: 'ጽ',
             next: {
                 u: { value: 'ጹ', next: null },
                 U: { value: 'ጹ', next: null },
@@ -570,6 +617,7 @@ export default {
             },
         },
         p: {
+            value: 'ፕ',
             next: {
                 u: { value: 'ፑ', next: null },
                 U: { value: 'ፑ', next: null },
@@ -581,6 +629,10 @@ export default {
                 O: { value: 'ፖ', next: null },
             },
         },
+        e: { value: 'ኢ', next: null },
+        i: { value: 'ኢ', next: null },
+        o: { value: 'ኦ', next: null },
+        u: { value: 'ኡ', next: null },
         ':': {
             value: '፡',
             next: { ':': { value: '።', next: { ':': { value: ':', next: null } } }, ',': { value: '፥', next: null } },

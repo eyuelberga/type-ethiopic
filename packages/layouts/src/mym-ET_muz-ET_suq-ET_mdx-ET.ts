@@ -656,7 +656,10 @@ export default {
                 O: { value: 'ፆ', next: { a: { value: 'ፇ', next: null }, A: { value: 'ፇ', next: null } } },
             },
         },
-        e: { next: { e: { value: 'ዕ', next: null } } },
+        e: { value: 'ኢ', next: null },
+        i: { value: 'ኢ', next: null },
+        o: { value: 'ኦ', next: null },
+        u: { value: 'ኡ', next: null },
         ':': {
             value: '፡',
             next: { ':': { value: '።', next: { ':': { value: ':', next: null } } }, ',': { value: '፥', next: null } },
