@@ -1,10 +1,12 @@
 import { TypeEthiopic, KeyboardLayout } from '@type-ethiopic/core';
+import Default from './ET';
+const defaultLayout = { [Default.meta.name]: Default.layout };
 export type Input = HTMLInputElement | HTMLTextAreaElement;
 export class TypeEthiopicWeb extends TypeEthiopic {
     public on: boolean;
     private input: Input;
 
-    constructor(input: Input, layouts: Record<string, KeyboardLayout>, on = true) {
+    constructor(input: Input, on = true, layouts: Record<string, KeyboardLayout> = defaultLayout) {
         super(layouts);
 
         this.on = on;

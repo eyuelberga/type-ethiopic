@@ -40,5 +40,6 @@
     "dependencies": {
         "@changesets/changelog-github": "0.2.8",
         "@changesets/cli": "2.14.1"
-    }
+    },
+    "version": "0.0.0"
 }

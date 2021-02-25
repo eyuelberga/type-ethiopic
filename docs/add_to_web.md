@@ -1,18 +1,7 @@
-## @type-ethiopic/web
+# Adding Type Ethiopic to web
 
-Add Ethiopic typing functionality to your web applications.
-
-## Installation
-
-```sh
-$ yarn add @type-ethiopic/web
-
-# or
-
-$ npm install @type-ethiopic/web
-```
-
-## Basic usage
+> Type Ethiopic supports web integration through the `@type-ethiopic/web` package.
+> You can use it on a simple site or along with a web framework like React or Vue.
 
 ```javascript
 import { TypeEthiopicWeb } from '@type-ethiopic/web';
@@ -27,7 +16,3 @@ new TypeEthiopicWeb(document.querySelector('input'), {
 // add to HTMLTextAreaElement
 new TypeEthiopicWeb(document.querySelector('textarea'), { layout });
 ```
-
-## License
-
-MIT © [Eyuel Berga](https://github.com/eyuelberga)

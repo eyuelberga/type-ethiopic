@@ -646,6 +646,10 @@ export default {
                 O: { value: 'ፖ', next: null },
             },
         },
+        e: { value: 'ኢ', next: null },
+        i: { value: 'ኢ', next: null },
+        o: { value: 'ኦ', next: null },
+        u: { value: 'ኡ', next: null },
         ':': {
             value: '፡',
             next: { ':': { value: '።', next: { ':': { value: ':', next: null } } }, ',': { value: '፥', next: null } },
