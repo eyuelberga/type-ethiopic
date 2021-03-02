@@ -59,7 +59,7 @@ describe('TypeEthiopic.ts', () => {
                 },
             },
         },
-        layout2: { b: { value: 'b', next: null } },
+        layout2: { b: { value: 'b', next: null }, a: { value: 'ኢ', next: null } },
     };
     beforeEach(() => {
         instance = new TypeEthiopic(layouts);
@@ -90,6 +90,32 @@ describe('TypeEthiopic.ts', () => {
         instance.setLayouts(newLayouts);
         expect(instance.layouts).toContain('layout3');
         expect(instance.layouts).toContain('layout4');
+    });
+
+    it('should update current layout when new keyboard-layout map is set ', () => {
+        const newLayouts = {
+            layout3: { a: { value: 'a', next: null } },
+            layout4: { b: { value: 'b', next: null } },
+        };
+        instance.setLayouts(newLayouts);
+        expect(instance.current).toBe('layout3');
+    });
+
+    it('should be able to use new layout after change', () => {
+        expect(instance.write('a')).toEqual({ symbol: 'አ', replace: false });
+        const newLayout = 'layout2';
+        instance.current = newLayout;
+        expect(instance.write('a')).toEqual({ symbol: 'ኢ', replace: false });
+    });
+
+    it('should be able to use new layout after new keyboard-layout map is set ', () => {
+        expect(instance.write('a')).toEqual({ symbol: 'አ', replace: false });
+        const newLayouts = {
+            layout3: { a: { value: '@', next: null } },
+            layout4: { b: { value: '&', next: null } },
+        };
+        instance.setLayouts(newLayouts);
+        expect(instance.write('a')).toEqual({ symbol: '@', replace: false });
     });
 
     it("should not replace last character if it doesn't exist in current scope", () => {
