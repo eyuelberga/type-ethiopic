@@ -1,5 +1,11 @@
 # @type-ethiopic/web
 
+## 0.1.4
+
+### Patch Changes
+
+-   [`880a9e9`](https://github.com/eyuelberga/type-ethiopic/commit/880a9e9ce785d3c48a38cb2eb19cc882d5d040d3) [#18](https://github.com/eyuelberga/type-ethiopic/pull/18) Thanks [@eyuelberga](https://github.com/eyuelberga)! - - fix shift bug issue (#17)
+
 ## 0.1.3
 
 ### Patch Changes
