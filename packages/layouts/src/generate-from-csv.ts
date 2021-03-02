@@ -38,7 +38,7 @@ for (const [code, { name, path }] of Object.entries(layouts)) {
 }
 // write index indexFile
 // const layoutMap:Record<string,KeyboardLayout> = {}
-let index: string = `
+let index = `
 import { KeyboardLayout } from '@type-ethiopic/core';
 const layouts:Record<string,KeyboardLayout> = {};`;
 for (const { path, name } of Object.values(layouts)) {
