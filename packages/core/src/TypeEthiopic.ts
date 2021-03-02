@@ -32,10 +32,10 @@ export class TypeEthiopic {
         'Tab',
     ];
 
-    constructor(keyboardLayouts: Record<string, KeyboardLayout>) {
+    constructor(layouts: Record<string, KeyboardLayout>) {
         this.level = 0;
         this.scope = {};
-        this.keyboardLayouts = keyboardLayouts;
+        this.keyboardLayouts = layouts;
         this.currentLayout = Object.keys(this.keyboardLayouts)[0];
     }
     get current(): string {
@@ -45,6 +45,7 @@ export class TypeEthiopic {
     set current(layout: string) {
         if (layout in this.keyboardLayouts) {
             this.currentLayout = layout;
+            this.resetScope();
         } else {
             throw new Error('Layout does not exists');
         }
@@ -55,6 +56,8 @@ export class TypeEthiopic {
     }
     setLayouts(layouts: Record<string, KeyboardLayout>): void {
         this.keyboardLayouts = layouts;
+        this.currentLayout = Object.keys(this.keyboardLayouts)[0];
+        this.resetScope();
     }
     public write(char: string): { symbol: string; replace: boolean } {
         const symbol = this.getSymbolFromScope(char);
