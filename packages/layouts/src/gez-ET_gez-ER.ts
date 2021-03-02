@@ -1,4 +1,7 @@
-export default {
+import { KeyboardLayout } from '@type-ethiopic/core';
+type LayoutMeta = { name: string; regions: string[] };
+type LayoutSpec = { meta: LayoutMeta; layout: KeyboardLayout };
+const layout: LayoutSpec = {
     meta: { name: "Ge'ez", regions: ['gez-ET', 'gez-ER'] },
     layout: {
         h: {
@@ -38,6 +41,57 @@ export default {
                 A: { value: 'ሃ', next: null },
                 o: { value: 'ሆ', next: null },
                 O: { value: 'ሆ', next: null },
+                h: {
+                    value: 'ኅ',
+                    next: {
+                        e: { value: 'ኀ', next: null },
+                        E: { value: 'ኀ', next: null },
+                        u: {
+                            value: 'ኁ',
+                            next: {
+                                e: { value: 'ኈ', next: null },
+                                E: { value: 'ኈ', next: null },
+                                u: { value: 'ኍ', next: null },
+                                U: { value: 'ኍ', next: null },
+                                i: {
+                                    value: 'ኊ',
+                                    next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } },
+                                },
+                                I: {
+                                    value: 'ኊ',
+                                    next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } },
+                                },
+                                a: { value: 'ኋ', next: null },
+                                A: { value: 'ኋ', next: null },
+                            },
+                        },
+                        U: {
+                            value: 'ኁ',
+                            next: {
+                                e: { value: 'ኈ', next: null },
+                                E: { value: 'ኈ', next: null },
+                                u: { value: 'ኍ', next: null },
+                                U: { value: 'ኍ', next: null },
+                                i: {
+                                    value: 'ኊ',
+                                    next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } },
+                                },
+                                I: {
+                                    value: 'ኊ',
+                                    next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } },
+                                },
+                                a: { value: 'ኋ', next: null },
+                                A: { value: 'ኋ', next: null },
+                            },
+                        },
+                        i: { value: 'ኂ', next: { e: { value: 'ኄ', next: null }, E: { value: 'ኄ', next: null } } },
+                        I: { value: 'ኂ', next: { e: { value: 'ኄ', next: null }, E: { value: 'ኄ', next: null } } },
+                        a: { value: 'ኃ', next: null },
+                        A: { value: 'ኃ', next: null },
+                        o: { value: 'ኆ', next: null },
+                        O: { value: 'ኆ', next: null },
+                    },
+                },
             },
         },
         l: {
@@ -284,133 +338,81 @@ export default {
             },
         },
         x: {
+            value: 'ኅ',
             next: {
-                ',': {
+                e: { value: 'ኀ', next: null },
+                E: { value: 'ኀ', next: null },
+                u: {
+                    value: 'ኁ',
                     next: {
-                        h: {
-                            value: 'ኅ',
-                            next: {
-                                e: { value: 'ኀ', next: null },
-                                E: { value: 'ኀ', next: null },
-                                u: {
-                                    value: 'ኁ',
-                                    next: {
-                                        e: { value: 'ኈ', next: null },
-                                        E: { value: 'ኈ', next: null },
-                                        u: { value: 'ኍ', next: null },
-                                        U: { value: 'ኍ', next: null },
-                                        i: {
-                                            value: 'ኊ',
-                                            next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } },
-                                        },
-                                        I: {
-                                            value: 'ኊ',
-                                            next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } },
-                                        },
-                                        a: { value: 'ኋ', next: null },
-                                        A: { value: 'ኋ', next: null },
-                                    },
-                                },
-                                U: {
-                                    value: 'ኁ',
-                                    next: {
-                                        e: { value: 'ኈ', next: null },
-                                        E: { value: 'ኈ', next: null },
-                                        u: { value: 'ኍ', next: null },
-                                        U: { value: 'ኍ', next: null },
-                                        i: {
-                                            value: 'ኊ',
-                                            next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } },
-                                        },
-                                        I: {
-                                            value: 'ኊ',
-                                            next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } },
-                                        },
-                                        a: { value: 'ኋ', next: null },
-                                        A: { value: 'ኋ', next: null },
-                                    },
-                                },
-                                i: {
-                                    value: 'ኂ',
-                                    next: { e: { value: 'ኄ', next: null }, E: { value: 'ኄ', next: null } },
-                                },
-                                I: {
-                                    value: 'ኂ',
-                                    next: { e: { value: 'ኄ', next: null }, E: { value: 'ኄ', next: null } },
-                                },
-                                a: { value: 'ኃ', next: null },
-                                A: { value: 'ኃ', next: null },
-                                o: { value: 'ኆ', next: null },
-                                O: { value: 'ኆ', next: null },
-                            },
-                        },
+                        e: { value: 'ኈ', next: null },
+                        E: { value: 'ኈ', next: null },
+                        u: { value: 'ኍ', next: null },
+                        U: { value: 'ኍ', next: null },
+                        i: { value: 'ኊ', next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } } },
+                        I: { value: 'ኊ', next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } } },
+                        a: { value: 'ኋ', next: null },
+                        A: { value: 'ኋ', next: null },
                     },
                 },
+                U: {
+                    value: 'ኁ',
+                    next: {
+                        e: { value: 'ኈ', next: null },
+                        E: { value: 'ኈ', next: null },
+                        u: { value: 'ኍ', next: null },
+                        U: { value: 'ኍ', next: null },
+                        i: { value: 'ኊ', next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } } },
+                        I: { value: 'ኊ', next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } } },
+                        a: { value: 'ኋ', next: null },
+                        A: { value: 'ኋ', next: null },
+                    },
+                },
+                i: { value: 'ኂ', next: { e: { value: 'ኄ', next: null }, E: { value: 'ኄ', next: null } } },
+                I: { value: 'ኂ', next: { e: { value: 'ኄ', next: null }, E: { value: 'ኄ', next: null } } },
+                a: { value: 'ኃ', next: null },
+                A: { value: 'ኃ', next: null },
+                o: { value: 'ኆ', next: null },
+                O: { value: 'ኆ', next: null },
             },
         },
         X: {
+            value: 'ኅ',
             next: {
-                ',': {
+                e: { value: 'ኀ', next: null },
+                E: { value: 'ኀ', next: null },
+                u: {
+                    value: 'ኁ',
                     next: {
-                        h: {
-                            value: 'ኅ',
-                            next: {
-                                e: { value: 'ኀ', next: null },
-                                E: { value: 'ኀ', next: null },
-                                u: {
-                                    value: 'ኁ',
-                                    next: {
-                                        e: { value: 'ኈ', next: null },
-                                        E: { value: 'ኈ', next: null },
-                                        u: { value: 'ኍ', next: null },
-                                        U: { value: 'ኍ', next: null },
-                                        i: {
-                                            value: 'ኊ',
-                                            next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } },
-                                        },
-                                        I: {
-                                            value: 'ኊ',
-                                            next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } },
-                                        },
-                                        a: { value: 'ኋ', next: null },
-                                        A: { value: 'ኋ', next: null },
-                                    },
-                                },
-                                U: {
-                                    value: 'ኁ',
-                                    next: {
-                                        e: { value: 'ኈ', next: null },
-                                        E: { value: 'ኈ', next: null },
-                                        u: { value: 'ኍ', next: null },
-                                        U: { value: 'ኍ', next: null },
-                                        i: {
-                                            value: 'ኊ',
-                                            next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } },
-                                        },
-                                        I: {
-                                            value: 'ኊ',
-                                            next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } },
-                                        },
-                                        a: { value: 'ኋ', next: null },
-                                        A: { value: 'ኋ', next: null },
-                                    },
-                                },
-                                i: {
-                                    value: 'ኂ',
-                                    next: { e: { value: 'ኄ', next: null }, E: { value: 'ኄ', next: null } },
-                                },
-                                I: {
-                                    value: 'ኂ',
-                                    next: { e: { value: 'ኄ', next: null }, E: { value: 'ኄ', next: null } },
-                                },
-                                a: { value: 'ኃ', next: null },
-                                A: { value: 'ኃ', next: null },
-                                o: { value: 'ኆ', next: null },
-                                O: { value: 'ኆ', next: null },
-                            },
-                        },
+                        e: { value: 'ኈ', next: null },
+                        E: { value: 'ኈ', next: null },
+                        u: { value: 'ኍ', next: null },
+                        U: { value: 'ኍ', next: null },
+                        i: { value: 'ኊ', next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } } },
+                        I: { value: 'ኊ', next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } } },
+                        a: { value: 'ኋ', next: null },
+                        A: { value: 'ኋ', next: null },
                     },
                 },
+                U: {
+                    value: 'ኁ',
+                    next: {
+                        e: { value: 'ኈ', next: null },
+                        E: { value: 'ኈ', next: null },
+                        u: { value: 'ኍ', next: null },
+                        U: { value: 'ኍ', next: null },
+                        i: { value: 'ኊ', next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } } },
+                        I: { value: 'ኊ', next: { e: { value: 'ኌ', next: null }, E: { value: 'ኌ', next: null } } },
+                        a: { value: 'ኋ', next: null },
+                        A: { value: 'ኋ', next: null },
+                    },
+                },
+                i: { value: 'ኂ', next: { e: { value: 'ኄ', next: null }, E: { value: 'ኄ', next: null } } },
+                I: { value: 'ኂ', next: { e: { value: 'ኄ', next: null }, E: { value: 'ኄ', next: null } } },
+                a: { value: 'ኃ', next: null },
+                A: { value: 'ኃ', next: null },
+                o: { value: 'ኆ', next: null },
+                O: { value: 'ኆ', next: null },
             },
         },
         n: {
@@ -444,10 +446,10 @@ export default {
             },
         },
         a: {
-            value: 'እ',
+            value: 'አ',
             next: {
-                e: { value: 'አ', next: null },
-                E: { value: 'አ', next: null },
+                e: { value: 'እ', next: null },
+                E: { value: 'እ', next: null },
                 u: { value: 'ኡ', next: null },
                 U: { value: 'ኡ', next: null },
                 i: { value: 'ኢ', next: { e: { value: 'ኤ', next: null }, E: { value: 'ኤ', next: null } } },
@@ -567,10 +569,10 @@ export default {
             },
         },
         A: {
-            value: 'ዕ',
+            value: 'ዐ',
             next: {
-                e: { value: 'ዐ', next: null },
-                E: { value: 'ዐ', next: null },
+                e: { value: 'ዕ', next: null },
+                E: { value: 'ዕ', next: null },
                 u: { value: 'ዑ', next: null },
                 U: { value: 'ዑ', next: null },
                 i: { value: 'ዒ', next: { e: { value: 'ዔ', next: null }, E: { value: 'ዔ', next: null } } },
@@ -777,35 +779,36 @@ export default {
                 A: { value: 'ጻ', next: null },
                 o: { value: 'ጾ', next: null },
                 O: { value: 'ጾ', next: null },
+                S: {
+                    value: 'ፅ',
+                    next: {
+                        e: { value: 'ፀ', next: null },
+                        E: { value: 'ፀ', next: null },
+                        u: { value: 'ፁ', next: null },
+                        U: { value: 'ፁ', next: null },
+                        i: { value: 'ፂ', next: { e: { value: 'ፄ', next: null }, E: { value: 'ፄ', next: null } } },
+                        I: { value: 'ፂ', next: { e: { value: 'ፄ', next: null }, E: { value: 'ፄ', next: null } } },
+                        a: { value: 'ፃ', next: null },
+                        A: { value: 'ፃ', next: null },
+                        o: { value: 'ፆ', next: null },
+                        O: { value: 'ፆ', next: null },
+                    },
+                },
             },
         },
         D: {
+            value: 'ፅ',
             next: {
-                ',': {
-                    next: {
-                        S: {
-                            value: 'ፅ',
-                            next: {
-                                e: { value: 'ፀ', next: null },
-                                E: { value: 'ፀ', next: null },
-                                u: { value: 'ፁ', next: null },
-                                U: { value: 'ፁ', next: null },
-                                i: {
-                                    value: 'ፂ',
-                                    next: { e: { value: 'ፄ', next: null }, E: { value: 'ፄ', next: null } },
-                                },
-                                I: {
-                                    value: 'ፂ',
-                                    next: { e: { value: 'ፄ', next: null }, E: { value: 'ፄ', next: null } },
-                                },
-                                a: { value: 'ፃ', next: null },
-                                A: { value: 'ፃ', next: null },
-                                o: { value: 'ፆ', next: null },
-                                O: { value: 'ፆ', next: null },
-                            },
-                        },
-                    },
-                },
+                e: { value: 'ፀ', next: null },
+                E: { value: 'ፀ', next: null },
+                u: { value: 'ፁ', next: null },
+                U: { value: 'ፁ', next: null },
+                i: { value: 'ፂ', next: { e: { value: 'ፄ', next: null }, E: { value: 'ፄ', next: null } } },
+                I: { value: 'ፂ', next: { e: { value: 'ፄ', next: null }, E: { value: 'ፄ', next: null } } },
+                a: { value: 'ፃ', next: null },
+                A: { value: 'ፃ', next: null },
+                o: { value: 'ፆ', next: null },
+                O: { value: 'ፆ', next: null },
             },
         },
         f: {
@@ -853,12 +856,12 @@ export default {
                 O: { value: 'ፖ', next: null },
             },
         },
-        e: { value: 'ኢ', next: null },
-        i: { value: 'ኢ', next: null },
+        e: { value: 'እ', next: null },
+        i: { value: 'ኢ', next: { e: { value: 'ኤ', next: null }, E: { value: 'ኤ', next: null } } },
         o: { value: 'ኦ', next: null },
         u: { value: 'ኡ', next: null },
-        E: { value: 'ዒ', next: null },
-        I: { value: 'ዒ', next: null },
+        E: { value: 'ዕ', next: null },
+        I: { value: 'ዒ', next: { e: { value: 'ዔ', next: null }, E: { value: 'ዔ', next: null } } },
         O: { value: 'ዖ', next: null },
         U: { value: 'ዑ', next: null },
         ':': {
@@ -871,3 +874,4 @@ export default {
         '>': { value: '›', next: { '>': { value: '»', next: { '>': { value: '>', next: null } } } } },
     },
 };
+export default layout;

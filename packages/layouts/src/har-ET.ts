@@ -1,4 +1,7 @@
-export default {
+import { KeyboardLayout } from '@type-ethiopic/core';
+type LayoutMeta = { name: string; regions: string[] };
+type LayoutSpec = { meta: LayoutMeta; layout: KeyboardLayout };
+const layout: LayoutSpec = {
     meta: { name: 'Harari', regions: ['har-ET'] },
     layout: {
         h: {
@@ -362,10 +365,10 @@ export default {
             },
         },
         a: {
-            value: 'እ',
+            value: 'አ',
             next: {
-                e: { value: 'አ', next: null },
-                E: { value: 'አ', next: null },
+                e: { value: 'እ', next: null },
+                E: { value: 'እ', next: null },
                 u: { value: 'ኡ', next: null },
                 U: { value: 'ኡ', next: null },
                 i: { value: 'ኢ', next: { e: { value: 'ኤ', next: null }, E: { value: 'ኤ', next: null } } },
@@ -646,8 +649,8 @@ export default {
                 O: { value: 'ፎ', next: null },
             },
         },
-        e: { value: 'ኢ', next: null },
-        i: { value: 'ኢ', next: null },
+        e: { value: 'እ', next: null },
+        i: { value: 'ኢ', next: { e: { value: 'ኤ', next: null }, E: { value: 'ኤ', next: null } } },
         o: { value: 'ኦ', next: null },
         u: { value: 'ኡ', next: null },
         ':': {
@@ -660,3 +663,4 @@ export default {
         '>': { value: '›', next: { '>': { value: '»', next: { '>': { value: '>', next: null } } } } },
     },
 };
+export default layout;
