@@ -71,20 +71,6 @@ describe('TypeEthiopicWeb.ts', () => {
         expect(input.value).toEqual(expectedText);
     });
 
-    it('should not write character if (SHIFT) key had been triggered ', () => {
-        new TypeEthiopicWeb(input, true, KeyboardLayouts);
-        new TypeEthiopicWeb(textarea, true, KeyboardLayouts);
-
-        const text = ['s', 'e', 'l', 'Shift', 'a', 'm'];
-        const expectedText = 'ሰልም';
-        // input
-        simulateTyping(input, text);
-        expect(input.value).toEqual(expectedText);
-        // textarea
-        simulateTyping(textarea, text);
-        expect(input.value).toEqual(expectedText);
-    });
-
     it('should not write character if (ALT) key had been triggered ', () => {
         new TypeEthiopicWeb(input, true, KeyboardLayouts);
         new TypeEthiopicWeb(textarea, true, KeyboardLayouts);

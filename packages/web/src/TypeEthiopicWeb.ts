@@ -36,7 +36,7 @@ export class TypeEthiopicWeb extends TypeEthiopic {
         }
     }
     private resolveSymbol(event: KeyboardEvent): boolean {
-        if (event.ctrlKey || event.shiftKey || event.altKey || event.metaKey) {
+        if (event.ctrlKey || event.altKey || event.metaKey) {
             return false;
         } else {
             event.preventDefault();
