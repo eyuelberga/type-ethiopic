@@ -1,5 +1,12 @@
 # @type-ethiopic/web
 
+## 0.1.3
+
+### Patch Changes
+
+-   Updated dependencies [[`436c897`](https://github.com/eyuelberga/type-ethiopic/commit/436c8977a531939a62991780f0bf5e0bddf608ad)]:
+    -   @type-ethiopic/core@1.0.0
+
 ## 0.1.2
 
 ### Patch Changes
