@@ -1,4 +1,7 @@
-export default {
+import { KeyboardLayout } from '@type-ethiopic/core';
+type LayoutMeta = { name: string; regions: string[] };
+type LayoutSpec = { meta: LayoutMeta; layout: KeyboardLayout };
+const layout: LayoutSpec = {
     meta: { name: 'Amharic', regions: ['am-ET'] },
     layout: {
         h: {
@@ -440,17 +443,17 @@ export default {
             },
         },
         a: {
-            value: 'እ',
+            value: 'አ',
             next: {
                 e: {
-                    value: 'አ',
+                    value: 'እ',
                     next: {
                         e: { value: '', next: { e: { value: 'ኧ', next: null }, E: { value: 'ኧ', next: null } } },
                         E: { value: '', next: { e: { value: 'ኧ', next: null }, E: { value: 'ኧ', next: null } } },
                     },
                 },
                 E: {
-                    value: 'አ',
+                    value: 'እ',
                     next: {
                         e: { value: '', next: { e: { value: 'ኧ', next: null }, E: { value: 'ኧ', next: null } } },
                         E: { value: '', next: { e: { value: 'ኧ', next: null }, E: { value: 'ኧ', next: null } } },
@@ -551,10 +554,10 @@ export default {
             },
         },
         A: {
-            value: 'ዕ',
+            value: 'ዐ',
             next: {
-                e: { value: 'ዐ', next: null },
-                E: { value: 'ዐ', next: null },
+                e: { value: 'ዕ', next: null },
+                E: { value: 'ዕ', next: null },
                 u: { value: 'ዑ', next: null },
                 U: { value: 'ዑ', next: null },
                 i: { value: 'ዒ', next: { e: { value: 'ዔ', next: null }, E: { value: 'ዔ', next: null } } },
@@ -883,12 +886,12 @@ export default {
                 O: { value: 'ፖ', next: null },
             },
         },
-        e: { value: 'ኢ', next: null },
-        i: { value: 'ኢ', next: null },
+        e: { value: 'እ', next: null },
+        i: { value: 'ኢ', next: { e: { value: 'ኤ', next: null }, E: { value: 'ኤ', next: null } } },
         o: { value: 'ኦ', next: null },
         u: { value: 'ኡ', next: null },
-        E: { value: 'ዒ', next: null },
-        I: { value: 'ዒ', next: null },
+        E: { value: 'ዕ', next: null },
+        I: { value: 'ዒ', next: { e: { value: 'ዔ', next: null }, E: { value: 'ዔ', next: null } } },
         O: { value: 'ዖ', next: null },
         U: { value: 'ዑ', next: null },
         ':': {
@@ -901,3 +904,4 @@ export default {
         '>': { value: '›', next: { '>': { value: '»', next: { '>': { value: '>', next: null } } } } },
     },
 };
+export default layout;

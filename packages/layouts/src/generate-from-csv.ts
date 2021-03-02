@@ -24,11 +24,29 @@ for (const [code, { name, path }] of Object.entries(layouts)) {
                 name,
                 regions: code.split('_'),
             };
+
             fs.writeFileSync(
                 `${__dirname}/${code}.ts`,
-                `export default  ${JSON.stringify({ meta, layout: { ...layout, ...punctuation } })};`,
+                `import { KeyboardLayout } from '@type-ethiopic/core';
+                type LayoutMeta = {name: string; regions: string[];};
+                type LayoutSpec = { meta:LayoutMeta; layout: KeyboardLayout; };
+                const layout : LayoutSpec = ${JSON.stringify({ meta, layout: { ...layout, ...punctuation } })};
+                export default layout;
+                `,
             );
         });
 }
-// write index indexFile  fs.writeFileSync(
-fs.writeFileSync(`${__dirname}/index.ts`, `export default ${JSON.stringify(layouts)};`);
+// write index indexFile
+// const layoutMap:Record<string,KeyboardLayout> = {}
+let index = `
+import { KeyboardLayout } from '@type-ethiopic/core';
+const layouts:Record<string,KeyboardLayout> = {};`;
+for (const { path, name } of Object.values(layouts)) {
+    const layout = name.replace(/[^a-zA-Z]/g, '');
+    index += `
+    import ${layout} from './${path}';
+    layouts[${layout}.meta.name] = ${layout}.layout;
+    `;
+}
+index += `export default layouts;`;
+fs.writeFileSync(`${__dirname}/index.ts`, index);
