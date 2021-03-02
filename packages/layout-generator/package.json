@@ -18,6 +18,6 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "@type-ethiopic/core": "^0.1.0"
+        "@type-ethiopic/core": "^1.0.0"
     }
 }
