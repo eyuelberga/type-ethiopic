@@ -118,4 +118,20 @@ describe('TypeEthiopicWeb.ts', () => {
         expect(input.value).toEqual(expectedText);
         expect(input.value).toEqual(expectedText);
     });
+    it('should work with default layout', () => {
+        const inputInstance = new TypeEthiopicWeb(input);
+        const textareaInstance = new TypeEthiopicWeb(textarea);
+        const text = 'endiet nachu';
+        const expectedText = 'እንዴት ናችሁ';
+        // input
+        inputInstance.on = true;
+        expect(inputInstance.on).toEqual(true);
+        simulateTyping(input, text);
+        expect(input.value).toEqual(expectedText);
+        // textarea
+        textareaInstance.on = true;
+        expect(textareaInstance.on).toEqual(true);
+        simulateTyping(textarea, text);
+        expect(input.value).toEqual(expectedText);
+    });
 });
