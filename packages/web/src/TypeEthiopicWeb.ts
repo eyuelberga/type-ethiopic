@@ -30,9 +30,11 @@ export class TypeEthiopicWeb extends TypeEthiopic {
     private writeSymbol(symbol: string, replace: boolean): void {
         const index = this.input.selectionStart || 0;
         if (replace) {
-            this.changeInputValue(this.input.value.substring(0, this.input.value.length - 1) + symbol);
+            this.changeInputValue(this.replaceStringAt(this.input.value, symbol, index));
+            this.input.setSelectionRange(index, index);
         } else {
             this.changeInputValue(this.insertStringAt(this.input.value, symbol, index));
+            this.input.setSelectionRange(index + 1, index + 1);
         }
     }
     private resolveSymbol(event: KeyboardEvent): boolean {
@@ -66,6 +68,9 @@ export class TypeEthiopicWeb extends TypeEthiopic {
             return string.substring(0, index) + stringToInsert + string.substr(index);
         }
         return stringToInsert + string;
+    }
+    private replaceStringAt(string: string, stringToInsert: string, index: number): string {
+        return string.substring(0, index - 1) + stringToInsert + string.substr(index);
     }
     private setNativeValue(element: Input, value: string): void {
         const prototype = Object.getPrototypeOf(element);
