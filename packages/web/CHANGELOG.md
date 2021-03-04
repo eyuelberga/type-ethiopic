@@ -1,5 +1,11 @@
 # @type-ethiopic/web
 
+## 1.0.0
+
+### Major Changes
+
+-   [`b9e0d14`](https://github.com/eyuelberga/type-ethiopic/commit/b9e0d14592e45c94a1e2c534ee397c677bd42557) [#24](https://github.com/eyuelberga/type-ethiopic/pull/24) Thanks [@eyuelberga](https://github.com/eyuelberga)! - First major release.
+
 ## 0.1.4
 
 ### Patch Changes
