@@ -1,3 +1,6 @@
+# !! DEPRICATION NOTICE !!
+This repository will no longer be maintained and the source code has been integreated to the [Keywrite](https://github.com/eyuelberga/keywrite) project. 
+Please refer to the [Docs](https://eyuelberga.github.io/keywrite) to see how to use Keywrite.
 <p align="center">
   <a href="https://github.com/eyuelberga/type-ethiopic">
     <img src="https://github.com/eyuelberga/type-ethiopic/blob/master/logo/logo.png?raw=true" alt="Type Ethiopic logo" width="300" />
